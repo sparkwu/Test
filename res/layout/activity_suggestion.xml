@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:id="@+id/pagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#EBEBEB"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_suggestion_return"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/searchbackbtn" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:text="意见反馈"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_suggestion_home"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/righttopbutton" />
+    </LinearLayout>
+    <!-- 头部结束 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="fill_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="30.0dip" >
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/fankuitext_style"
+                android:layout_marginTop="18.0dip"
+                android:text="@string/txt_title" />
+
+            <EditText
+                android:id="@+id/etxt_title"
+                style="@style/fankuiedittext_style"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_toRightOf="@id/txt_title"
+                android:hint="@string/input_title" />
+
+            <TextView
+                android:id="@+id/txt_Content"
+                style="@style/fankuitext_style"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/txt_title"
+                android:layout_marginTop="30.0dip"
+                android:text="@string/txt_Content" />
+
+            <EditText
+                android:id="@+id/etxt_Content"
+                style="@style/fankuiedittext_style"
+                android:layout_height="150.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/txt_Content"
+                android:layout_marginTop="8.0dip"
+                android:gravity="top|left|center"
+                android:hint="@string/input_Content"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:singleLine="false" />
+
+            <ImageButton
+                android:id="@+id/btn_submit"
+                android:layout_width="89.0dip"
+                android:layout_height="42.0dip"
+                android:layout_below="@id/etxt_Content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/submit" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

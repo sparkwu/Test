@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#EBEBEB"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_copyright_return"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/searchbackbtn" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:text="版权信息"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_copyright_home"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/righttopbutton" />
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 内容开始 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_copyright_chabaike"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="95dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_copyright_title"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/img_copyright_chabaike"
+            android:text="买买茶.茶百科"
+            android:textSize="24sp" />
+         <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+              android:layout_below="@id/tv_copyright_title"
+            android:text="Android v1.0" 
+            android:textSize="20dp"
+            android:textColor="#CCCCCC"/>
+         <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:text="CopyRight@2014 WYJ.com"
+            android:textSize="20sp" />
+         <TextView
+             android:id="@+id/tv_copyright_coptright"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="版权所有"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 内容结束 -->
+
+</LinearLayout>

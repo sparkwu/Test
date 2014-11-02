@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="edittextcolor">#ff83cb55</color>
+    <color name="edittxthintcolor">#ffd9d9d9</color>
+    <color name="title_color">#ffffffce</color>
+    <color name="titlefontcolor">#ff979797</color>
+</resources>

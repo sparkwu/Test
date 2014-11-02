@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+<!-- 头部开始 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="#EBEBEB"
+        android:gravity="center">
+     <Button 
+         android:id="@+id/btn_return"
+         android:layout_width="0px"
+         android:layout_weight="0.8"
+         android:layout_height="wrap_content"
+         android:background="@drawable/searchbackbtn"/>
+     <TextView
+        android:layout_width="0px"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="茶百科" 
+        android:layout_marginTop="2dp"
+        android:textSize="20sp"/>
+     <Button 
+         android:id="@+id/btn_home"
+         android:layout_width="0px"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:background="@drawable/righttopbutton"/>
+        </LinearLayout>
+<!-- 头部结束 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <!-- 搜索文本框 -->
+
+        <EditText
+            android:id="@+id/et_searchEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/searchico"
+            android:ems="10"
+            android:hint="关键字"
+            android:padding="5dp" >
+        </EditText>
+        <!-- 搜索按钮 -->
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/gosearch" />
+    </LinearLayout>
+    <!-- 热门搜索：茶 -->
+
+    <TextView
+        android:id="@+id/tv_serachtea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:text="热门搜索：茶" />
+    <!-- 收藏夹提示 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shoucangjia"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="收藏夹"
+        android:textColor="#000" />
+    <!-- 我的收藏 -->
+
+    <TextView
+        android:id="@+id/tv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:text="我的收藏"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <!-- 弄个好看的分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_margin="5dp"
+        android:background="#efebef" />
+    <!-- 查看访问记录 -->
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="查看访问记录"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <!-- 关于客户端提示 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shoucangjia"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="关于客户端"
+        android:textColor="#000" />
+    <!-- 版权信息 -->
+
+    <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:text="版权信息"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <!-- 弄个好看的分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_margin="5dp"
+        android:background="#efebef" />
+    <!-- 意见反馈 -->
+
+    <TextView
+        android:id="@+id/tv_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="意见反馈"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+</LinearLayout>
